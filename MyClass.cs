@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 
 namespace MyProgram
 {
@@ -6,12 +7,11 @@ namespace MyProgram
 	{
      	void Main (string[] args)
      	{
-     		Console.WriteLine("This C# Console Project\ncan count till 10");
-     		for (int i = 0; i < 10; i++)
+     		while(true)
      		{
-     			Console.WriteLine(i);
+     			Console.WriteLine("This is an endless program");
+     			Thread.Sleep(500);
      		}
-     		Console.WriteLine("Done!");
      		Console.ReadLine();
      	}
 	}
