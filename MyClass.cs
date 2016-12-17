@@ -6,7 +6,12 @@ namespace MyProgram
 	{
      	void Main (string[] args)
      	{
-     		Console.WriteLine("Hello World!");
+     		Console.WriteLine("This C# Console Project\ncan count till 10");
+     		for (int i = 0; i < 10; i++)
+     		{
+     			Console.WriteLine(i);
+     		}
+     		Console.WriteLine("Done!");
      		Console.ReadLine();
      	}
 	}
